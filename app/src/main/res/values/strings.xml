@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CowboyShoot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_choose">Which One Do you want play</string>
+    <string name="text_desc_player_1">Player VS Computer</string>
+    <string name="text_desc_player_2">Player VS Player</string>
+    <string name="text_title_splash">Cowboy Shoot</string>
+    <string name="text_header">Input Your Name</string>
+    <string name="text_hint_name">Name</string>
+    <string name="text_title_onBoarding_1">Wlcome To The Cowboy Shoot</string>
+    <string name="text_desc_onBoarding_1">This is a simple game using Android Studio</string>
+    <string name="text_title_onBoarding_2">Let\'s get started</string>
+    <string name="text_desc_onBoarding_2">you just need to avoid enemy\'s bullet to win</string>
+    <string name="text_fire">Fire !!</string>
+    <string name="text_restart">Restart</string>
+    <string name="text_you_win">You Win !!</string>
+    <string name="text_you_lose">You Lose !!</string>
+</resources>

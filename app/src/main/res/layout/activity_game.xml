@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.GameActivity">
+
+    <ImageView
+        android:src="@drawable/bg_game"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_status_game"
+        android:textAlignment="center"
+        android:textSize="@dimen/_32ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pixelated_font"
+        tools:text="Player 1 Win"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow_up"
+        android:src="@drawable/ic_arrow_up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow_down"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_arrow_up"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+
+    <TextView
+        android:id="@+id/tv_action_game"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/pixelated_font"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_32ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_arrow_down"
+        android:text="start"/>
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/iv_arrow_up"
+        android:orientation="vertical"
+        android:id="@+id/ll_player_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/iv_player_left_top"
+            tools:src="@drawable/ic_cowboy_left_shoot_false"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_player_left_middle"
+            tools:src="@drawable/ic_cowboy_left_shoot_false"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_player_left_bottom"
+            tools:src="@drawable/ic_cowboy_left_shoot_false"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_action_game"
+        android:orientation="vertical"
+        android:id="@+id/ll_player_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/iv_player_right_top"
+            tools:src="@drawable/ic_cowboy_right_shoot_false"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_player_right_middle"
+            tools:src="@drawable/ic_cowboy_right_shoot_false"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_player_right_bottom"
+            tools:src="@drawable/ic_cowboy_right_shoot_false"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginVertical="@dimen/_8sdp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
